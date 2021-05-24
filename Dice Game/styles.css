@@ -1,0 +1,40 @@
+/* 45526c - Dark Blue
+5aa897 - Green
+f8a488 - Peach
+f8f5f1 - Cream */
+body {
+  background-color: #45526c;
+  text-align: center;
+}
+footer {
+  font-family: 'Lobster', cursive;
+  color: #5aa897;
+}
+h1 {
+  font-family: 'Lobster', cursive;
+  color: #5aa897;
+  font-size: 6rem;
+  margin: 0 3% 5% 0;
+  padding: 0;
+  text-shadow: 3px 3px black;
+}
+@media (max-width: 900px ) {
+  h1 {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 700px ) {
+  h1 {
+    font-size: 4.5rem;
+  }
+}
+h2 {
+  font-family: 'Indie Flower', cursive;
+  color: #f8f5f1;
+}
+.container-fluid{
+  padding: 3% 7%;
+}
+.col {
+  margin: 5%;
+}
