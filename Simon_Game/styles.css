@@ -1,0 +1,105 @@
+/* Colours & Fonts
+#06d6a0 - Caribbean Green
+#1c448e - Dark Cornflower Blue
+#f4ba3e - Maximum Yellow Red
+#9a031e - Ruby Red
+#1a140f - Smoky Black
+#f5efed - isabelline
+font-family: 'Finger Paint', cursive;
+font-family: 'Ubuntu Condensed', sans-serif;
+*/
+body {
+  background-color: #1a140f;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  color: #f5efed;
+  text-align: center;
+}
+h1 {
+  text-align: center;
+  font-family: 'Finger Paint', cursive;
+}
+h5{
+  text-align: center;
+  font-family: 'Finger Paint', cursive;
+}
+.container {
+  width: 500px;
+}
+.header{
+  height: 20vh;
+  padding: 15%;
+
+}
+.row {
+  height: 250px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.col {
+  /* strip it back */
+  padding: 2%;
+}
+.button {
+  height:100%;
+  width: 100%;
+
+  /* height: 200px; */
+  margin: 0;
+  padding: 0;
+
+}
+
+/* buttons */
+.btn-blue {
+  border: none;
+  background-color: #1c448e;
+  border-top-left-radius: 50%;
+}
+.btn-yellow {
+  border: none;
+  background-color: #f4ba3e;
+  border-top-right-radius: 50%;
+}
+.btn-red {
+  border: none;
+  background-color: #9a031e;
+  border-bottom-left-radius: 50%;
+}
+.btn-green {
+  border: none;
+  background-color: #1b998b;
+  border-bottom-right-radius: 50%;
+}
+
+.btn-blue-press {
+  border: none;
+  background-color: #1c448e;
+  border-top-left-radius: 50%;
+  box-shadow: 15px 15px rgba(28, 68, 142, 0.4);
+  transform: translate(-7px, -7px);
+}
+
+.btn-yellow-press {
+  border: none;
+  background-color: #f4ba3e;
+  border-top-right-radius: 50%;
+  box-shadow: -15px 15px rgba(244, 186, 62, 0.4);
+  transform: translate(7px, -7px);
+}
+
+.btn-red-press {
+  border: none;
+  background-color: #9a031e;
+  border-bottom-left-radius: 50%;
+  box-shadow: 15px -15px rgba(154, 3, 30, 0.4);
+  transform: translate(-7px, 7px);
+}
+.btn-green-press {
+  border: none;
+  background-color: #1b998b;
+  border-bottom-right-radius: 50%;
+  box-shadow: -15px -15px rgba(27, 153, 139, 0.4);
+  transform: translate(7px, 7px);
+}
