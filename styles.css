@@ -1,0 +1,40 @@
+/* Fonts & Colours
+font-family: 'Chela One', cursive;
+font-family: 'Montserrat', sans-serif;
+eeeeee - light grey
+aad8d3 - light green
+00adb5 - turquious
+393e46 - dark grey
+*/
+body {
+  background-color: #eeeeee;
+  font-family: 'Montserrat', sans-serif;
+  color: #393e46;
+}
+h1 {
+  font-family: 'Chela One', cursive;
+  color: #00adb5;
+}
+
+h5 {
+  font-weight: 500;
+}
+.container {
+  padding: 3% 7%;
+}
+
+.navbar {
+  background-color: #00adb5;
+  color: white;
+}
+
+.btn {
+  background-color: #aad8d3;
+  border: none;
+
+}
+.btn:hover {
+  background-color: #00adb5;
+  border: none;
+
+}
