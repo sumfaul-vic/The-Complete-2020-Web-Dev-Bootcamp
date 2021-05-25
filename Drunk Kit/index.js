@@ -8,6 +8,7 @@ for (var i = 0; i < numOfDrums; i++) {
 
     var whichDrum = this.innerHTML;
     playSound(whichDrum);
+    btnAnimation(whichDrum);
 
     });
 };
@@ -15,6 +16,7 @@ for (var i = 0; i < numOfDrums; i++) {
 // Detecting Button Press
 document.addEventListener("keydown", function(event) {
     playSound(event.key);
+    btnAnimation(event.key);
 });
 
 // Function to play sound
@@ -46,3 +48,15 @@ function playSound(whichDrum) {
   var audio = new Audio(whichSound);
   audio.play();
 };
+
+// Function for animation
+
+function btnAnimation(whichDrum) {
+  var activeBtn = document.querySelector("." + whichDrum);
+
+  activeBtn.classList.add("pressed");
+
+  setTimeout(function() {
+    activeBtn.classList.remove("pressed");
+  }, 100);
+}
