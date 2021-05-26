@@ -18,7 +18,7 @@ $(".btn-start").on("click touchstart", function() {
 
 // Mobile Users
 $(".button").on("click touchstart", function(event) {
-
+  event.preventDefault();
   let x = this
   let btn = this.classList[1]
   play(x, btn);
