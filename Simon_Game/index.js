@@ -1,6 +1,6 @@
 // event listeners
 // Desktop Users
-$(".btn-start").click(function() {
+$(".btn-start").on("click touchstart", function() {
   if (simonSays.length === 0) {
     simonsTurn();
   } else {
@@ -10,14 +10,14 @@ $(".btn-start").click(function() {
   }
 });
 
-$(".button").click(function(event) {
-  let x = this
-  let btn = this.classList[1]
-  play(x, btn);
-})
+// $(".button").click(function(event) {
+//   let x = this
+//   let btn = this.classList[1]
+//   play(x, btn);
+// })
 
 // Mobile Users
-$(".button").on("touchstart", function(event) {
+$(".button").on("click touchstart", function(event) {
 
   let x = this
   let btn = this.classList[1]
