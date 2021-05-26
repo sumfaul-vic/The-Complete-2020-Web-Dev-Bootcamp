@@ -17,6 +17,7 @@ body {
 h1 {
   text-align: center;
   font-family: 'Finger Paint', cursive;
+  margin: 5%;
 }
 h5{
   text-align: center;
@@ -36,17 +37,32 @@ h5{
    .container {
   width: 500px;
 } }
-
+/* header */
 .header{
   height: 20vh;
-  padding: 15%;
+  padding: 5% 0;
 
+}
+.btn-start {
+  height: auto;
+  margin-bottom: 5%;
+  font-family: 'Finger Paint', cursive;
+  border: none;
+  border-radius: 30%;
+  transform: rotate(-3deg);
+}
+
+/* game */
+
+.game {
+  margin-top: 5%;
 }
 .row {
   height: 25vh;
   text-align: center;
   padding: 0;
   margin: 0;
+
 }
 
 .col {
