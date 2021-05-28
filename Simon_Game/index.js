@@ -1,6 +1,7 @@
 // event listeners
-// Desktop Users
+
 $(".btn-start").on("click touchstart", function() {
+  event.stopImmediatePropagation();
   if (simonSays.length === 0) {
     simonsTurn();
   } else {
@@ -10,21 +11,14 @@ $(".btn-start").on("click touchstart", function() {
   }
 });
 
-// $(".button").click(function(event) {
-//   let x = this
-//   let btn = this.classList[1]
-//   play(x, btn);
-// })
-
-// Mobile Users
 $(".button").on("click touchstart", function(event) {
-  event.preventDefault();
+  event.stopImmediatePropagation();
+
   let x = this
   let btn = this.classList[1]
   play(x, btn);
 
 });
-
 
 // variables
 var simonSays = [];
@@ -36,9 +30,6 @@ function play(x, btn) {
   if (simonSays.length === 0) {
     $(".title").text("Press start to play");
   } else {
-
-    // let x = this
-    // let btn = this.classList[1]
 
     let newClass = createPressAnimation(btn)
     let btnSound = createSoundFileName(btn);
@@ -77,8 +68,10 @@ function simonsTurn() {
 }
 
 function loserReset() {
+  let score = simonSays.length
   $(".title").text("You lose");
   $(".btn-start").text("Try Again");
+  $(".score").text("Score: " + score);
   reset();
 }
 
@@ -117,8 +110,7 @@ function playSimonSaysArray() {
 }
 
 function animationJump(x, newClass, btnSound) {
-  // console.log("animation: " + newClass);
-  // console.log(x);
+
   $(x).toggleClass(newClass);
 
   var audio = new Audio(btnSound);
@@ -147,7 +139,7 @@ function getRandomButton() {
       colour = "btn-green"
       break;
   };
-  // console.log(colour);
+
   return colour;
 }
 
