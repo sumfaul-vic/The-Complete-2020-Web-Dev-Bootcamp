@@ -28,10 +28,11 @@ h5{
   flex-direction: column;
 
 } */
-.container {
+.container  {
   width: 80vw;
   height: 80%;
 }
+
 
 @media (min-width:600px) {
    .container {
@@ -130,4 +131,31 @@ h5{
   border-bottom-right-radius: 50%;
   box-shadow: -15px -15px rgba(27, 153, 139, 0.4);
   transform: translate(7px, 7px);
+}
+
+/* footer */
+
+.footer{
+  text-align: center;
+  padding: 95%;
+}
+.foot-div {
+
+  height: 80%;
+}
+
+.score-icon {
+
+  align-items: center;
+  text-align: center;
+  width: 5vw;
+  height: auto;
+  background-color: white;
+  color:#1a140f;
+
+  margin: 2% auto;
+  font-family: 'Finger Paint', cursive;
+  border: none;
+  border-radius: 30%;
+  transform: rotate(3deg);
 }
